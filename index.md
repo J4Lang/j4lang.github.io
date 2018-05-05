@@ -1,4 +1,8 @@
+<<<<<<< HEAD
 <img src = "https://user-images.githubusercontent.com/16887042/38399942-3f8f86da-3902-11e8-935e-c2f4446c77b8.png" alt = "J4 Logo" width = 100 />
+=======
+![j4 icon](https://j4lang.github.io/images/j4icon.png "j4 logo")
+>>>>>>> 829aef098c6bbb20b4e8f53d16d1806deb8b9940
 
 ## Introduction
 J4 does away with verbose, unreadable code and replaces it with a readable, understandable coding language that standardizes meaningful, beautiful code. This is made possible with whitespace matching and utilizing syntax that emphasize the flow of information. Along with these leaps forward in code structure, J4 simplifies coding conventions by handling the minutia of memory management and reinventing the outdated and arbitrary rules present in other languages.
@@ -9,7 +13,11 @@ J4 pulls inspiration from Swift, ELM, Python, and Lua
 * .j4 File Extension
 * Whitespace Sensitive
 * Easy Array Creation
+<<<<<<< HEAD
 * Powerful Object Creation
+=======
+* Powerful Object
+>>>>>>> 829aef098c6bbb20b4e8f53d16d1806deb8b9940
 * First Class Functions
 * Higher Order Functions
 * Static Typing
@@ -30,7 +38,11 @@ J4 pulls inspiration from Swift, ELM, Python, and Lua
 * String: `“a”`, `“hello world”
 * Function: `addOne(x)`
 * Array: [`“Martinez”`, `"Goocher"`, `"Hardy"`, `"Watkins”`]
+<<<<<<< HEAD
 * Object: `Color magenta <- new Color(1.0,0.0,1.0)`, `Color halfGray <- new Color(0.5)`
+=======
+* Object: `{name:“Sally”, age:25, delete(), duplicate()}`
+>>>>>>> 829aef098c6bbb20b4e8f53d16d1806deb8b9940
 * Comments: `~ Single line comment`
             `(~ Multi line comment ~)`
 
@@ -40,9 +52,15 @@ J4 on the left, Javascript on the right
 __Variable Declarations__
 
 ```
+<<<<<<< HEAD
 String name <- "j4"                               let name = “j4”;
 Number age <- 1                                   let age = 1;
 Boolean hasArrows <- true                         let hasArrows = true;
+=======
+String name <- "j4"                               let name = “j4”
+Number age <- 1                                   let age = 1
+Boolean hasArrows <- true                         let hasArrows = true
+>>>>>>> 829aef098c6bbb20b4e8f53d16d1806deb8b9940
 ```
 
 __Arithmetic__
@@ -102,6 +120,7 @@ __Object Declarations__
 
 ```
 struct Color
+<<<<<<< HEAD
   Number red, green, blue <- 0, 0, 0
 
   init(r: Number, g: Number, b: Number)
@@ -114,6 +133,20 @@ struct Color
     return rgb
 
 Color magenta <- new Color(1.0,0.0,1.0)
+=======
+    Number red, green, blue
+    init(red: Number, green: Number, blue: Number)
+        self.red   <- red
+        self.green <- green
+        self.blue  <- blue
+
+    init(grayscale: Number)
+        red   <- grayscale
+        green <- grayscale
+        blue  <- grayscale
+
+Color magenta <- new Color(1.0, 0.0, 1.0)
+>>>>>>> 829aef098c6bbb20b4e8f53d16d1806deb8b9940
 Color halfGray <- new Color(0.5)
 ```
 
@@ -122,11 +155,16 @@ Color halfGray <- new Color(0.5)
 * isNotAFunction : f is not a function
 * isNotAnArray : l is not an array
 * isNotAnObject : d is not an object
+<<<<<<< HEAD
 * doesNotHaveProperty : x does not have property x.property
+=======
+* doesNotHaveProperty : x does not have property x.size
+>>>>>>> 829aef098c6bbb20b4e8f53d16d1806deb8b9940
 * invalidBinaryOperands : List and Number cannot be used with +
 * invalidUnaryOperand : String cannot be used with ‘not’
 * parameterArgumentMismatch : f has signature Number, Array but was called with signature String, Array, Number
 * expressionIsNotTypeBoolean : x + 3 is type Number but must be type Boolean
+<<<<<<< HEAD
 * notDeclared : tried to use x before it was declared
 * notInitialized : x is not given a value
 * notDeclared : x has not been declared
@@ -137,3 +175,16 @@ Color halfGray <- new Color(0.5)
 * noClassConstructor : did not find a constructor in class C
 * invalidAccessType : arr["2"], Cannot access a list using a string, need a number
 * arrayIndexOutOfBounds : tried to access an element outside of the bounds of the array
+=======
+* ~unusedVariable : variable x is declared but never used
+* notDeclared : tried to use x before it was declared
+* notInitialized : x is not given a value
+* returnOutsideFunction : found a return statement outside of a function
+* ~multipleReturnsInABlock : found more than one return statement in a block
+* typeMismatch : expected String got Number
+* typeDoesNotExist : X y expects object ‘X’ is a type for variable y
+* noClassConstructor : did not find a constructor in class C
+* arrayIndexOutOfBounds : tried to access an element outside of the bounds of the array
+
+(~) means warning
+>>>>>>> 829aef098c6bbb20b4e8f53d16d1806deb8b9940
