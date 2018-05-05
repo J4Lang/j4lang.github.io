@@ -1,4 +1,4 @@
-<img src = "J4 Icon.png" alt = "J4 Logo" width = 400 />
+<img src = "https://user-images.githubusercontent.com/16887042/38399942-3f8f86da-3902-11e8-935e-c2f4446c77b8.png" alt = "J4 Logo" width = 100 />
 
 ## Introduction
 J4 does away with verbose, unreadable code and replaces it with a readable, understandable coding language that standardizes meaningful, beautiful code. This is made possible with whitespace matching and utilizing syntax that emphasize the flow of information. Along with these leaps forward in code structure, J4 simplifies coding conventions by handling the minutia of memory management and reinventing the outdated and arbitrary rules present in other languages.
